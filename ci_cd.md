@@ -36,5 +36,19 @@ jobs:
     production:
         needs: testing
         runs-on: ubuntu-latest
-        ....
-```
+        steps:
+            - name: SSH into server using Private Key
+              uses: appleboy/ssh-action@v1
+              with:
+                host: ${{secrets.HOST}}
+                username: ${{secrets.USERNAME}}
+                port: ${{secrets.PORT}}
+                key: ${{secrets.KEY}}
+                script: |
+                    cd /var/www/laravel_ci_cd
+                    git pull origin main
+                    composer install --no-dev --prefer-dist --optimize-autoloader --no-interaction
+                    php artisan migrate --force
+                    php artisan optimize
+            
+``` 
