@@ -1,3 +1,3 @@
-### [Laravel VPS Setup](https://github.com/lalitharw/DevOPS/blob/main/laravel_vps.md)
+### [LAMP Stack](https://github.com/lalitharw/DevOPS/blob/main/laravel_vps.md)
 ### [CI/CD YAML](https://github.com/lalitharw/DevOPS/blob/main/ci_cd.md)
-### [Laravel Nginx VPS Setup]()
+### [LEMP Stack](https://github.com/lalitharw/DevOPS/blob/main/laravel_nginx.md)
