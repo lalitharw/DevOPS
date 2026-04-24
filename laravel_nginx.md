@@ -61,56 +61,35 @@ sudo chmod -R 775 boostrap/cache
 server {
     listen 80;
     listen [::]:80;
-    server_name your_domain_or_ip;
-    root /var/www/<project_name>/public;
-    index index.php index.html index.htm;
+    server_name 13.51.193.80;
+    root /var/www/laravel_load_balancer_test_code/public;
 
-    # Security Headers
-    add_header X-Frame-Options "SAMEORIGIN" always;
-    add_header X-XSS-Protection "1; mode=block" always;
-    add_header X-Content-Type-Options "nosniff" always;
-    add_header Referrer-Policy "no-referrer-when-downgrade" always;
-    add_header Content-Security-Policy "default-src 'self' http: https: data: blob;" always;
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-Content-Type-Options "nosniff";
 
-    # Gzip Compression
-    gzip on;
-    gzip_vary on;
-    gzip_min_length 1024;
-    gzip_proxied expired no-cache no-store private must-revalidate auth;
-    gzip_types text/plain text/css text/xml text/javascript application/x-javascript application/xml+rss;
+    index index.php;
 
-    # Handle Laravel Routes
+    charset utf-8;
+
     location / {
         try_files $uri $uri/ /index.php?$query_string;
     }
 
-    # PHP Processing
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    error_page 404 /index.php;
+
     location ~ \.php$ {
-        fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
+        fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
         fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
         include fastcgi_params;
         fastcgi_hide_header X-Powered-By;
     }
 
-    # Static Files Caching
-    location ~* \.(jpg|jpeg|png|gif|ico|css|js)$ {
-        expires 1y;
-        add_header Cache-Control "public, immutable";
-    }
-
-    # Security: Deny access to hidden files
-    location ~ /\. {
+    location ~ /\.(?!well-known).* {
         deny all;
     }
-
-    # Security: Deny access to sensitive files
-    location ~ /(\.env|\.git|composer\.(json|lock)|package\.json) {
-        deny all;
-    }
-
-    # Favicon and robots.txt
-    location = /favicon.ico { access_log off; log_not_found off; }
-    location = /robots.txt  { access_log off; log_not_found off; }
 }
 ```
 
