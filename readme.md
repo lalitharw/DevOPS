@@ -2,4 +2,4 @@
 ### [CI/CD YAML](https://github.com/lalitharw/DevOPS/blob/main/ci_cd.md)
 ### [LEMP Stack](https://github.com/lalitharw/DevOPS/blob/main/laravel_nginx.md)
 ### [Nginx Load Balancer](https://github.com/lalitharw/DevOPS/blob/main/nginx_load_balancer.md)
-### [Load Balancer Shared DB](https://github.com/lalitharw/DevOPS/blob/main/load_balancer_shared_db.md)
+### [Load Balancer Shared DB](https://github.com/lalitharw/DevOPS/blob/main/load_balancer_with_shared_db.md)
