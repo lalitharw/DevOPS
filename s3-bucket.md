@@ -25,3 +25,6 @@ While Creating s3 disable all public block option. We have to uncheck that so th
 ```
 Create User and click on create access key. It will generate access key and secret key which should be used to upload image to s3 bucket. In Permissions Section search for "AmazonS3FullAccess".
 ```
+
+### Reference
+https://www.honeybadger.io/blog/laravel-s3/
