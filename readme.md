@@ -4,5 +4,5 @@
 ### [Nginx Load Balancer](https://github.com/lalitharw/DevOPS/blob/main/nginx_load_balancer.md)
 ### [Load Balancer Shared DB](https://github.com/lalitharw/DevOPS/blob/main/load_balancer_with_shared_db.md)
 ### [S3 Bucket](https://github.com/lalitharw/DevOPS/blob/main/s3-bucket.md)
-### [Redis Server](https://github.com/lalitharw/DevOPS/blob/main/s3-bucket.md)
+### [Redis Server](https://github.com/lalitharw/DevOPS/blob/main/Redis-setup.md)
 ### [RDS Setup](https://github.com/lalitharw/DevOPS/blob/main/rds-mysql.md)
