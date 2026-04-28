@@ -5,4 +5,4 @@
 ### [Load Balancer Shared DB](https://github.com/lalitharw/DevOPS/blob/main/load_balancer_with_shared_db.md)
 ### [S3 Bucket](https://github.com/lalitharw/DevOPS/blob/main/s3-bucket.md)
 ### [Redis Server](https://github.com/lalitharw/DevOPS/blob/main/s3-bucket.md)
-### [RDS Setup](https://github.com/lalitharw/DevOPS/blob/main/rds-mysql.md))
+### [RDS Setup](https://github.com/lalitharw/DevOPS/blob/main/rds-mysql.md)
