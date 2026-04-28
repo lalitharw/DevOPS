@@ -6,3 +6,4 @@
 ### [S3 Bucket](https://github.com/lalitharw/DevOPS/blob/main/s3-bucket.md)
 ### [Redis Server](https://github.com/lalitharw/DevOPS/blob/main/Redis-setup.md)
 ### [RDS Setup](https://github.com/lalitharw/DevOPS/blob/main/rds-mysql.md)
+### [Nginx Health Check Load Balancer](https://github.com/lalitharw/DevOPS/blob/main/nginx_load_balancer_health_check.md)
