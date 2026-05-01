@@ -8,3 +8,4 @@
 ### [RDS Setup](https://github.com/lalitharw/DevOPS/blob/main/rds-mysql.md)
 ### [Nginx Health Check Load Balancer](https://github.com/lalitharw/DevOPS/blob/main/nginx_load_balancer_health_check.md)
 ### [Zero DownTime Deployment](https://github.com/lalitharw/DevOPS/blob/main/zero_downtme_load_balancer.md)
+### [AWS Load Balancer](https://github.com/lalitharw/DevOPS/blob/main/aws_load_balancer_setup.md)
